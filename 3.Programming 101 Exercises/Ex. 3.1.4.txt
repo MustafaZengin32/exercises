@@ -1,0 +1,22 @@
+Allow the user to input numbers, subtract the smaller from the bigger number and print the result ?								
+								
+//Prompt the user to input first number								
+PRINT:"Please enter the first number"								
+								
+//Capture the first number that was given by user and store it								
+INPUT firstNumber								
+								
+//Prompt the user to input second number								
+PRINT:"Please enter the second number"								
+								
+//Capture the second number that was given by user and store it								
+INPUT secondNumber								
+								
+//Compare the both numbers and substract the smaller from the bigger number and assign it to other value								
+IF firstNumber>secondNumber or firstNumber=secondNumber								
+sub=firstNumber-secondNumber								
+PRINT "The result of substraction is "+sub								
+								
+ELSE  								
+subA=secondNumber-firstNumber								
+PRINT "The result of substraction is "+subA								

@@ -1,0 +1,13 @@
+Create a program that prompts for your name and prints a greeting using your name ?								
+								
+//Prompt the user to input their name								
+PRINT:"Please enter your name"								
+								
+//Capture the name of user and store it								
+INPUT userName								
+								
+//Concat the userName with greeting word "Hello"								
+SET greetingMessage:"Hello"+userName								
+								
+//Print the words which are concated 								
+PRINT greetingMessage								

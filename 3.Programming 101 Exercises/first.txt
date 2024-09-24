@@ -10,4 +10,8 @@ INPUT userName
 SET greetingMessage:"Hello"+userName								
 								
 //Print the words which are concated 								
-PRINT greetingMessage								
+PRINT greetingMessage		
+
+
+
+

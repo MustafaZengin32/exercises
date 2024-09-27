@@ -1,0 +1,18 @@
+Sorting algorithms				
+Write a sort algorithm yourself. (e.g. bubble sort)				
+				
+//Prompt the user to input how many numbers s/he want to enter				
+PRINT:"How many numbers do you want to enter to create a list"				
+				
+//After you defined the length of list , you capture the values 				
+INPUT first , second , thirth…				
+				
+//Define a valuable that program can understand that our list is sorted , if not repeat again from the beginning				
+				
+//Start with first member of list and compare with second				
+				
+//If first is bigger than second , it must be swapped 				
+				
+//Repeat this process until the end of the list with pairs ( index,index+1 | index+1,index+2 | index+2,index+3…)				
+				
+//At the end , program should control whether list is sorted or not , if not , repeat this proccess again				

@@ -85,7 +85,7 @@ secondOne.forEach((value,index)=>{
 
 });
 
-alert("new challange");
+// alert("new challange");
 
 /**
  * push(): Adds one or more elements to the end of an array.
@@ -106,7 +106,59 @@ alert("new challange");
  */
 
 
+const maria={
 
+    named: "Maria",
+    age:25,
+    isMarried:true
+};
  
+console.log(maria);
 
+class cat{
+
+    constructor(namedd,age,job){
+        this.namedd=namedd;
+        this.age=age;
+        this.job=job;
+
+    }
+
+}
+
+
+    let ufuk=new cat("Ali","43","Pilot");
+
+    
+    console.log(Object.keys(ufuk));
+
+  pi=3,82;
+
+  console.log(Math.floor(pi));
+  console.log(Math.round(pi));
+  console.log(Math.ceil(pi));
+
+
+  let currentDate=new Date();
+
+
+  let h=currentDate.getHours();
+
+  console.log(h);
+
+  //4 ok , 100 not ok or 400 ok
+
+  const vb="first name";
+
+  const obj2={
+    [vb]:"Susanne",
+    [18]:38,
+    experience:13
+  }
+
+  console.log(obj2);
+
+  console.log(obj2[vb]);
+
+  
 

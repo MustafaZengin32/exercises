@@ -39,27 +39,6 @@ for(let i=a.length-1;i>=0;i--){
 }
 
 
-function discoverCell(row, col) {
-    // Eğer hücre zaten keşfedildiyse veya yenilgi varsa, işlem yapma
-    if (cells[row][col].discovered || defeat) {
-        return;
-    }
-
-    cells[row][col].discovered = true; // Hücreyi keşfet
-
-    // Eğer bu hücrede bomba varsa, yenilgi!
-    if (cells[row][col].isBomb) {
-        defeat = true;
-    }
-
-    // Eğer komşu bombalar yoksa, komşu hücreleri de aç
-    let adjBombs = countAdjacentBombs(row, col);
-    if (adjBombs === 0) {
-        discoverNeighborCells(row, col);
-    }
-}
-
-
 
 
 

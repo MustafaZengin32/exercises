@@ -39,28 +39,16 @@ for(let i=a.length-1;i>=0;i--){
 }
 
 
-function discoverCell(row, col) {
-    // Eğer hücre zaten keşfedildiyse veya yenilgi varsa, işlem yapma
-    if (cells[row][col].discovered || defeat) {
-        return;
+unction countAdjacentBombs(row, col) {
+    let bombCount = 0;
+    for (let r = row - 1; r <= row + 1; r++) {
+        for (let c = col - 1; c <= col + 1; c++) {
+            if (r >= 0 && r < ROWS_COUNT && c >= 0 && c < COLS_COUNT && !(r === row && c === col)) {
+                if (cells[r][c].isBomb) {
+                    bombCount++;
+                }
+            }
+        }
     }
-
-    cells[row][col].discovered = true; // Hücreyi keşfet
-
-    // Eğer bu hücrede bomba varsa, yenilgi!
-    if (cells[row][col].isBomb) {
-        defeat = true;
-    }
-
-    // Eğer komşu bombalar yoksa, komşu hücreleri de aç
-    let adjBombs = countAdjacentBombs(row, col);
-    if (adjBombs === 0) {
-        discoverNeighborCells(row, col);
-    }
+    return bombCount;
 }
-
-
-
-
-
-
